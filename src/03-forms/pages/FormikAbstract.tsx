@@ -1,6 +1,6 @@
 import { Form, Formik } from "formik";
 import * as Yup from "yup";
-import MyTextInput from "../components/MyTextInput";
+import { MyCheckBox, MySelect, MyTextInput } from "../components";
 import "../styles/styles.css";
 
 export const FormikAbstract = () => {
@@ -54,6 +54,15 @@ export const FormikAbstract = () => {
               type="email"
               placeholder="molina_504@hotmail.com"
             />
+
+            <MySelect label="Job Type" name="jobType">
+              <option value="">Select a job type</option>
+              <option value="designer">Designer</option>
+              <option value="development">Developer</option>
+              <option value="product">Product Manager</option>
+            </MySelect>
+
+            <MyCheckBox name="terms" label="Accept terms and conditions" />
 
             <button type="submit">Submit</button>
           </Form>

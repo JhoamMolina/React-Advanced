@@ -4,7 +4,7 @@ import { useForm } from "../hooks/useForm";
 
 import "../styles/styles.css";
 
-const RegisterPage = () => {
+export const RegisterPage = () => {
   const {
     name,
     email,
@@ -84,5 +84,3 @@ const RegisterPage = () => {
     </div>
   );
 };
-
-export default RegisterPage;

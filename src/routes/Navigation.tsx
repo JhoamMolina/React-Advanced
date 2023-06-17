@@ -4,12 +4,13 @@ import {
   BrowserRouter as Router,
   Switch,
 } from "react-router-dom";
-
-import { FormikAbstract } from "../03-forms/pages/FormikAbstract";
-import { FormikBasicPage } from "../03-forms/pages/FormikBasicPage";
-import { FormikComponents } from "../03-forms/pages/FormikComponents";
-import { FormikYupPage } from "../03-forms/pages/FormikYupPage";
-import RegisterPage from "../03-forms/pages/RegisterPage";
+import {
+  FormikAbstract,
+  FormikBasicPage,
+  FormikComponents,
+  FormikYupPage,
+  RegisterPage,
+} from "../03-forms/pages";
 import logo from "../logo.svg";
 
 export const Navigation = () => {
