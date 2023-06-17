@@ -1,0 +1,89 @@
+[
+  {
+    "type": "input",
+    "name": "firstName",
+    "placeholder": "Insert a name",
+    "label": "First Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "This field is required"
+      },
+      {
+        "type": "minLength",
+        "value": 2,
+        "message": "This field must have at least 3 characters"
+      },
+      {
+        "type": "maxLength",
+        "value": 20,
+        "message": "This field must have at most 10 characters"
+      }
+    ]
+  },
+  {
+    "type": "input",
+    "name": "lastName",
+    "placeholder": "Insert last name",
+    "label": "Last Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "This field is required"
+      },
+      {
+        "type": "minLength",
+        "value": 3,
+        "message": "This field must have at least 3 characters"
+      },
+      {
+        "type": "maxLength",
+        "value": 10,
+        "message": "This field must have at most 10 characters"
+      }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "placeholder": "Insert an email",
+    "label": "Email",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "This field is required"
+      },
+      {
+        "type": "email",
+        "message": "This field must be a valid email"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "Favorite Game",
+    "value": "",
+    "options": [
+      {
+        "label": "Select a game",
+        "value": ""
+      },
+      {
+        "label": "Dota 2",
+        "value": "dota2"
+      },
+      {
+        "label": "League of Legends",
+        "value": "lol"
+      },
+      {
+        "label": "Counter Strike",
+        "value": "cs"
+      }
+    ]
+  }
+]
